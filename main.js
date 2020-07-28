@@ -1,5 +1,4 @@
-const names = document.getElementById("name").value;
-const work = document.getElementById("work").value;
+
 
 
 const db = firebase.database();
@@ -13,6 +12,8 @@ var counter = t;
 
    
 document.getElementById("form").addEventListener("submit",(e)=>{
+    var names = document.getElementById("name").value;
+    var work = document.getElementById("work").value;
 e.preventDefault();
 
     createUser(names,work);
